@@ -228,3 +228,8 @@ li {
     gap: 10px;
     margin-top: 10px;
 }
+
+.user-info {
+    font-size: 14px;
+    color: white;
+}

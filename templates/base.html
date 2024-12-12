@@ -8,8 +8,11 @@
 </head>
 <body>
     <div class="nav-bar">
-        <a href="{{ url_for('index') }}">返回首頁</a>
+        <a href="{{ url_for('index') }}" class="home-link">返回首頁</a>
         {% if session.get('user_id') %}
+            <div class="user-info">
+                <span>歡迎，{{ session.get('username') }}</span>
+            </div>
             <nav>
                 <a href="{{ url_for('code_management') }}">程式碼管理</a>
                 <a href="{{ url_for('memo_management') }}">備忘錄管理</a>
